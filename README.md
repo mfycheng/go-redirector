@@ -2,25 +2,13 @@
 
 go-redirector is a basic HTTP/HTTPS web server that allows multiple vanity go import paths.
 
-## Getting
+### Installing
 
 ```
 go get github.com/mfycheng/go-retriever
 ```
 
-## Sample Systemd Service File
-```
-[Unit]
-Description=Go Redirector
-
-[Service]
-ExecStart=/usr/local/bin/go-redirector -config /etc/go-redirector/config.json
-
-[Install]
-WantedBy=multi-user.target
-```
-
-## Example Setup
+### Example Setup
 
 Currently, I have two domains, `ephyra.io`, and `mfycheng.com` that point to a single
 Digital Ocean server. Using go-redirector, both domains can be used for vanity import
@@ -58,4 +46,16 @@ The configuration for this is simply:
         }
     ]
 }
+```
+
+### Sample Systemd Service File
+```
+[Unit]
+Description=Go Redirector
+
+[Service]
+ExecStart=/usr/local/bin/go-redirector -config /etc/go-redirector/config.json
+
+[Install]
+WantedBy=multi-user.target
 ```
