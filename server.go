@@ -30,10 +30,6 @@ var redirectTemplate = template.Must(template.New("redirect").Parse(`
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="go-import" content="{{.URL}} git {{.RedirectURL}}">
         <meta http-equiv="refresh" content="0; url={{.RedirectURL}}">
-        <!--
-        <meta name="go-import" content="ephyra.io git https://github.com/mfycheng/ephyra">
-        <meta http-equiv="refresh" content="0; url=https://github.com/mfycheng/ephyra">
-        -->
     </head>
     <body>
         <p>Nothing to see here...</p>
