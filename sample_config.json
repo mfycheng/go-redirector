@@ -1,0 +1,14 @@
+{
+    "tls": [
+        {
+            "cert": "server.crt",
+            "key": "server.key"
+        }
+    ],
+    "redirections": [
+        {
+            "url": "mfycheng.com",
+            "redirect": "https://github.com/mfycheng"
+        }
+    ]
+}
